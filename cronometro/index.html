@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hora,alarma,cronometro,temporizador,marcador,basquet,marcador de basquet,contador,mirelojonline,reloj,hora,cubo rubik,controlador rubik">
+    <meta name="description" content="Mi Reloj Online | Cronometro. Funcionalida de cronometro te permite controlar cuanto tiempo tardas en dar una vuelta corriendo, la duracion de un evento en espacial y hasta controlar cuanto tardas en armar un cubo de rubik😀. Facil de usar, online y gratis.">
+    <meta name="author" content="Marcos Vargas">
+    <title>Cronometro | Mi Reloj Online</title>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/be5e200109.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-area">
+        <div class="logo"><img src="logo.svg" alt="mi reloj online logo"></div>
+        <nav class="wrapper">
+          <ul class="cl-effect-15" data-visible="false">
+            <li><a class="nav-link" href="../index.html" data-hover="Reloj">Reloj</a></li>
+            <li><a class="nav-link" href="index.html" data-hover="Cronometro">Cronometro</a></li>
+            <li><a class="nav-link" href="../temporizador/index.html" data-hover="Temporizador">Temporizador</a></li>
+            <li><a class="nav-link" href="../marcador/index.html" data-hover="Marcador">Marcador</a></li>
+            <li><a class="nav-link" href="../contador/index.html" data-hover="Contador">Contador</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="wrapper2">
+        <ul class="cl-effect-16 nav-list" data-visible="false">
+          <li class="list-item">
+            <a class="nav-link2" href="../index.html" data-hover="Reloj">Reloj</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="index.html" data-hover="Cronometro">Cronometro</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../temporizador/index.html" data-hover="Temporizador">Temporizador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../marcador/index.html" data-hover="Marcador">Marcador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../contador/index.html" data-hover="Contador">Contador</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="menu-burger"></div>
+      </div>
+
+    <!-- CRONOMETRO -->
+
+    <section class="cronometro">
+      <div class="container">
+        <div class="time">
+          <span class="hour">00</span>
+          <span class="colon">:</span>
+          <span class="minute">00</span>
+          <span class="colon">:</span>
+          <span class="second">00</span>
+          <span class="colon ms-colon">:</span>
+          <span class="milisecond">00</span>
+        </div>
+        <div class="botones">
+          <button class="iniciar"><i class="fa-solid fa-play"></i>  Iniciar</button>
+          <button class="parar"><i class="fa-solid fa-pause"></i>  Parar</button>
+          <button class="reiniciar"><i class="fa-solid fa-arrow-rotate-left"></i> Reiniciar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="info">
+            <div class="descripcion">
+                <h3>Cronometro</h3>
+                <p>Un cronómetro es un reloj de precisión que se utiliza para medir tiempos mediante la puesta en marcha y parada del mecanismo de control que generalmente son botones que ponen en marcha el inicio del tiempo o paran la medición de éste en el momento que se acciona.</p>
+            </div>
+            <div class="menu">
+                <ul class="">
+                    <li><a href="../index.html">Reloj</a></li>
+                    <li><a href="index.html">Cronometro</a></li>
+                    <li><a href="../temporizador/index.html">Temporizador</a></li>
+                    <li><a href="../marcador/index.html">Marcador</a></li>
+                    <li><a href="../contador/index.html">Contador</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="logo.svg" alt="mi reloj online logo">
+            </div>
+        </div>
+        <div class="derechos">
+            <small>© 2023 <b>MI RELOJ ONLINE</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="cronometro.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

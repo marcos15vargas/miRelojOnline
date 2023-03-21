@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre|Bubblegum+Sans|Caveat+Brush|Chewy|Lobster+Two');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@font-face {
+    font-family: 'calculator';
+    src: url('Calculator.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+.logo {
+    padding: 1rem;
+    margin-left: 20px;
+}
+.logo img{
+    width: 60px;
+}
+  
+.nav-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 100%; */
+    background: rgb(10, 10, 10);
+}
+.wrapper ul {
+    display: flex;
+    /* display: contents; */
+}
+  
+.wrapper li {
+    list-style: none;
+    font-family: 'Tilt Neon', cursive;
+}
+  
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    text-transform: uppercase;
+    transition: color 1s cubic-bezier(0.11, 0.7, 0, 1);
+    letter-spacing: 0.15rem;
+    line-height: 1.8;
+    font-size: 15px;
+}
+  
+.nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    /* padding: 10px; */
+    background-color: #ffffff;
+    content: '';
+    border-bottom: 1px solid #ffffff;
+    transform: translate3d(-101%, 0, 0);
+    transition: transform 1.2s cubic-bezier(0.11, 0.7, 0, 1);
+}
+  
+.nav-link:hover::after {
+    transform: translate3d(0, 0, 0);
+}
+.nav-link:hover,.nav-link:focus{
+    color: #ffffff;
+    text-decoration: none;
+}
+.wrapper2 {
+    display: none;
+}
+  
+.menu-btn {
+    display: none;
+}
+  
+@media (max-width: 40em) {
+  .nav-area {
+      width: 100%;
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: rgb(10, 10, 10);
+      z-index: 9999;
+    }
+  
+  .wrapper {
+      width: 100%;
+      height: 0px;
+      display: none;
+  }
+  .menu-btn {
+      width: 40px;
+      height: 40px;
+      border: rgb(255, 255, 255) solid 2px;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 9999;
+      /* display: none; */
+  }
+  
+  .menu-burger {
+      width: 90%;
+      margin: 0 auto;
+      height: 6px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 5px;
+      position: relative;
+  }
+  
+  .menu-burger::before,
+  .menu-burger::after {
+      content: '';
+      position: absolute;
+      background-color: rgb(255, 255, 255);
+      height: 6px;
+      width: 100%;
+      border-radius: 5px;
+  }
+  
+  .menu-burger::before {
+      transform: translateY(-10px);
+  }
+  .menu-burger::after {
+      transform: translateY(10px);
+  }
+  .wrapper2 {
+      width: 100%;
+      display: contents;
+      position: relative;
+      /* position: absolute; */
+      /* display: flex; */
+  }
+  
+  .wrapper2 .nav-list {
+      /* z-index: -9999; */
+      z-index: 500;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      background-color: rgb(21, 21, 21);
+      position: absolute;
+      top: 50px;
+      padding: 2rem;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: none;
+  }
+  
+  .wrapper2 .list-item {
+      list-style: none;
+      padding: 20px;
+      text-align: center;
+  }
+  
+  .wrapper2 .nav-link2 {
+      text-decoration: none;
+      /* padding: 1rem; */
+      font-size: 1.2rem;
+      color: rgb(0, 0, 0);
+      position: relative;
+      display: inline-block;
+      margin: 5px 50px;
+      outline: none;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 400;
+      text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+      font-size: 1.2em;
+    }
+  .nav-link2::after {
+      display: none;
+  }
+  .nav-list .nav-link2:hover,
+  .nav-list .nav-link2:focus {
+      outline: none;
+  }
+  .cl-effect-16 .nav-link2 {
+      color: rgba(53, 53, 53, 0.2);
+      text-shadow: none;
+  }
+  .cl-effect-16 .nav-link2::before {
+      color: rgb(255, 255, 255);
+      content: attr(data-hover);
+      position: absolute;
+      transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .cl-effect-16 .nav-link2:hover::before,
+  .cl-effect-16 .nav-link2:focus::before {
+      transform: scale(0.9);
+      opacity: 0;
+  }
+}
+
+
+
+/* ALARMA */
+
+.reloj-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #3c3c3c;
+}
+.reloj p{
+    margin: 0;
+    padding: 0;
+    font-family: 'calculator', cursive;
+}
+.reloj{
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(82, 234, 0);
+    text-shadow: 0 0 20px rgb(82, 234, 0), 0 0 20px rgba(10,175, 230,0);
+}
+.tiempo{
+    letter-spacing: 0.05em;
+    font-size: 100px;
+    padding: 5px 0;
+}
+.fecha{
+    letter-spacing: 0.1em;
+    font-size: 24px;
+}
+
+
+
+/* footer */
+
+.info{
+    display: flex;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+
+.descripcion{
+    width: 50%;
+    font-family: 'Tilt Neon', cursive;
+    color: #ffffff;
+}
+.descripcion h3{
+    margin: 20px;
+}
+.descripcion p{
+    margin: 20px;
+    font-size: 16px;
+}
+.menu{
+    width: 25%;
+    font-size: 15px;
+    padding-left: 100px;
+}
+.menu a{
+    font-family: 'Tilt Neon', cursive;
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo-footer{
+    width: 25%;
+    text-align: center;
+}
+.logo-footer img{
+    width: 100px;
+    margin: 40px;
+}
+.menu a:hover,a:focus{
+    color: #ffffff;
+}
+
+.derechos{
+    background: #000;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 20px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 768px){
+    .info{
+        flex-direction: column;
+      }
+      .descripcion{
+        width: 100%;
+        margin-top: 20px;
+      }
+      .menu{
+        width: 100%;
+        font-size: 20px;
+        text-align: start;
+        padding-left: 40px;
+        margin-top: 20px;
+      }
+      .logo-footer{
+        width: 100%;
+      }
+}

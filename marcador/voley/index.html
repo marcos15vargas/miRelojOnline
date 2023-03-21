@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hora,alarma,cronometro,temporizador,marcador,basquet,marcador de basquet,contador,mirelojonline,reloj,hora,cubo rubik,controlador rubik">
+    <meta name="description" content="Mi Reloj Online | Marcador de VOLEYBOL. El marcador de VOLEYBOL cumple una funcion para dirigir un partido. El equipo que gana una jugada se anota un punto. El partido se divide en cinco sets. Gana cualquiera de los primeros cuatro sets el primero en alcanzar los 25 puntos o más con un margen de dos puntos.">
+    <meta name="author" content="Marcos Vargas">
+    <title>Marcador Voleybol | Mi Reloj Online.</title>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/be5e200109.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-area">
+        <div class="logo"><img src="logo.svg" alt="mi reloj online logo"></div>
+        <nav class="wrapper">
+          <ul class="cl-effect-15" data-visible="false">
+            <li><a class="nav-link" href="../../index.html" data-hover="Reloj">Reloj</a></li>
+            <li><a class="nav-link" href="../../cronometro/index.html" data-hover="Cronometro">Cronometro</a></li>
+            <li><a class="nav-link" href="../../temporizador/index.html" data-hover="Temporizador">Temporizador</a></li>
+            <li><a class="nav-link" href="index.html" data-hover="Marcador">Marcador</a></li>
+            <li><a class="nav-link" href="../../contador/index.html" data-hover="Contador">Contador</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="wrapper2">
+        <ul class="cl-effect-16 nav-list" data-visible="false">
+          <li class="list-item">
+            <a class="nav-link2" href="../../index.html" data-hover="Reloj">Reloj</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../../cronometro/index.html" data-hover="Cronometro">Cronometro</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../../temporizador/index.html" data-hover="Temporizador">Temporizador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="index.html" data-hover="Marcador">Marcador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../../contador/index.html" data-hover="Contador">Contador</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="menu-burger"></div>
+      </div>
+
+
+      <!-- MODAL -->
+      <div class="modal">
+        <div class="caja">
+          <h2 class="mensaje"><i class="fa-solid fa-triangle-exclamation"></i> ATENCION <i class="fa-solid fa-triangle-exclamation"></i></h2>
+          <h3>Si esta usando un dispositivo movil se recomienda utilizar la pagina horizontalmente para una mejor experiencia. <br> Gracias y disfrute la pagina.</h3>
+          <button class="btnModal">ACEPTAR</button>
+        </div>
+      </div>
+    
+      <!-- MARCADOR DE Voleybol -->
+
+      <div class="titulo">
+        <h1>Marcador de Voleybol</h1>
+      </div>
+
+      <section class="voley">
+        <div class="cont">
+          <div class="puntos izq" id="btnLocal">
+            <input type="text" placeholder="Local" id="input">
+            <span class="puntosLocal">0</span>
+            <button class="btnReiPuntLoc">Reiniciar</button>
+          </div>
+          <div class="set izq">
+            <h3>Set</h3>
+            <span class="setLocal">0</span>
+            <button class="btnReiSetLoc">Reiniciar</button>
+          </div>
+          <div class="set der">
+            <h3>Set</h3>
+            <span class="setVisitante">0</span>
+            <button class="btnReiSetVis">Reiniciar</button>
+          </div>
+          <div class="puntos der" id="btnVisitante">
+            <input type="text" placeholder="Visitante" id="input2">
+            <span class="puntosVisitante">0</span>
+            <button class="btnReiPuntVis">Reiniciar</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+    <div class="marcadores">
+      <div class="marc">
+        <h4>Todos Los Marcadores</h4>
+        <button><a href="../basquetbol/index.html">Basquetbol</a></button>
+        <button><a href="../index.html">Futbol</a></button>
+        <button><a href="index.html">Voley</a></button>
+        <button><a href="../tenis/index.html">Tennis</a></button>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="info">
+            <div class="descripcion">
+                <h3>Marcador de Voleybol</h3>
+                <p>El marcador de VOLEYBOL cumple una funcion para dirigir un partido. El equipo que gana una jugada se anota un punto. El partido se divide en cinco sets. Gana cualquiera de los primeros cuatro sets el primero en alcanzar los 25 puntos o más con un margen de dos puntos.</p>
+            </div>
+            <div class="menu">
+                <ul class="">
+                    <li><a href="../../index.html">Reloj</a></li>
+                    <li><a href="../../cronometro/index.html">Cronometro</a></li>
+                    <li><a href="../../temporizador/index.html">Temporizador</a></li>
+                    <li><a href="index.html">Marcador</a></li>
+                    <li><a href="../../contador/index.html">Contador</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="logo.svg" alt="mi reloj online logo">
+            </div>
+        </div>
+        <div class="derechos">
+            <small>© 2023 <b>MI RELOJ ONLINE</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="puntuacionVoley.js"></script>
+</body>
+</html>

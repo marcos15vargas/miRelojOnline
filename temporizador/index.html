@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hora,alarma,cronometro,temporizador,marcador,basquet,marcador de basquet,contador,mirelojonline,reloj,hora,cubo rubik,controlador rubik">
+    <meta name="description" content="Mi Reloj Online | Temporizador. Funcionalida de temporizador te permite medir intervalo de tiempo, el cual es definido como el lapso de tiempo entre dos eventos. Un ejemplo de intervalo de tiempo es nuestra edad, cual es solo un lapso de tiempo desde que nacimos. Facil de usar, online y gratis.">
+    <meta name="author" content="Marcos Vargas">
+    <title>Cronometro | Mi Reloj Online</title>
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css">
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+	  <link rel="stylesheet" type="text/css" href="css/layout.css">
+   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/be5e200109.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-area">
+        <div class="logo"><img src="logo.svg" alt="mi reloj online logo"></div>
+        <nav class="wrapper">
+          <ul class="cl-effect-15" data-visible="false">
+            <li><a class="nav-link" href="../index.html" data-hover="Reloj">Reloj</a></li>
+            <li><a class="nav-link" href="../cronometro/index.html" data-hover="Cronometro">Cronometro</a></li>
+            <li><a class="nav-link" href="index.html" data-hover="Temporizador">Temporizador</a></li>
+            <li><a class="nav-link" href="../marcador/index.html" data-hover="Marcador">Marcador</a></li>
+            <li><a class="nav-link" href="../contador/index.html" data-hover="Contador">Contador</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="wrapper2">
+        <ul class="cl-effect-16 nav-list" data-visible="false">
+          <li class="list-item">
+            <a class="nav-link2" href="../index.html" data-hover="Reloj">Reloj</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../cronometro/index.html" data-hover="Cronometro">Cronometro</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="index.html" data-hover="Temporizador">Temporizador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../marcador/index.html" data-hover="Marcador">Marcador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../contador/index.html" data-hover="Contador">Contador</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="menu-burger"></div>
+      </div>
+
+    <!-- TEMPORIZADOR -->
+
+    <section class="section">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <div id="contenedorInputs">
+            <div class="field">
+              <label class="label">Minutos</label>
+              <div class="control">
+                <input class="input" id="minutos" type="number" placeholder="Minutos">
+              </div>
+            </div>
+            <div class="field">
+              <label class="label">Segundos</label>
+              <div class="control">
+                <input class="input" id="segundos" type="number" placeholder="Segundos">
+              </div>
+            </div>
+          </div>
+          <h2 id="tiempoRestante">00:00.0</h2>
+          <button id="btnIniciar" class="button is-success"><span class="mdi mdi-play"></span></button>
+          <button id="btnPausar" class="button is-success"><span class="mdi mdi-pause"></span></button>
+          <button id="btnDetener" class="button is-success"><span class="mdi mdi-stop"></span></button>
+          <br>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="info">
+            <div class="descripcion">
+                <h3>Temporizador</h3>
+                <p>Los cronómetros y los temporizadores son instrumentos usados para medir intervalo de tiempo, el cual es definido como el lapso de tiempo entre dos eventos. Un ejemplo de intervalo de tiempo es nuestra edad, cual es solo un lapso de tiempo desde que nacimos.</p>
+            </div>
+            <div class="menu">
+                <ul class="">
+                    <li><a href="../index.html">Reloj</a></li>
+                    <li><a href="../cronometro/index.html">Cronometro</a></li>
+                    <li><a href="index.html">Temporizador</a></li>
+                    <li><a href="../marcador/index.html">Marcador</a></li>
+                    <li><a href="../contador/index.html">Contador</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="logo.svg" alt="mi reloj online logo">
+            </div>
+        </div>
+        <div class="derechos">
+            <small>© 2023 <b>MI RELOJ ONLINE</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="temporizador.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>

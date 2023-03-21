@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="hora,alarma,cronometro,temporizador,marcador,basquet,marcador de basquet,contador,mirelojonline,reloj,hora,cubo rubik,controlador rubik">
+    <meta name="description" content="Mi Reloj Online | Contador. Contador Online es una herramienta diseñada para ayudarte a llevar un registro de todo lo que necesites contar. Puedes usarlo para contar personas, puntuaciones, goles, objetos, repeticiones o cualquier otra cosa..">
+    <meta name="author" content="Marcos Vargas">
+    <title>Contador | Mi Reloj Online</title>
+    <link rel="icon" href="logo.svg">
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/be5e200109.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="nav-area">
+        <div class="logo"><img src="logo.svg" alt=""></div>
+        <nav class="wrapper">
+          <ul class="cl-effect-15" data-visible="false">
+            <li><a class="nav-link" href="../index.html" data-hover="Reloj">Reloj</a></li>
+            <li><a class="nav-link" href="../cronometro/index.html" data-hover="Cronometro">Cronometro</a></li>
+            <li><a class="nav-link" href="../temporizador/index.html" data-hover="Temporizador">Temporizador</a></li>
+            <li><a class="nav-link" href="../marcador/index.html" data-hover="Marcador">Marcador</a></li>
+            <li><a class="nav-link" href="index.html" data-hover="Contador">Contador</a></li>
+          </ul>
+        </nav>
+      </header>
+      <nav class="wrapper2">
+        <ul class="cl-effect-16 nav-list" data-visible="false">
+          <li class="list-item">
+            <a class="nav-link2" href="../index.html" data-hover="Reloj">Reloj</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../cronometro/index.html" data-hover="Cronometro">Cronometro</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../temporizador/index.html" data-hover="Temporizador">Temporizador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="../marcador/index.html" data-hover="Marcador">Marcador</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link2" href="index.html" data-hover="Contador">Contador</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="menu-btn">
+        <div class="menu-burger"></div>
+      </div>
+
+    <!-- CONTADOR -->
+
+    <section class="contador">
+      <div class="botones">
+        <button class="menosUno">-1</button>
+        <button class="menosDos">-2</button>
+        <button class="menosCinco">-5</button>
+        <button class="menosDiez">-10</button>
+      </div>
+      <div class="display"><span class="num">0</span></div>
+      <div class="botones">
+        <button class="masUno">+1</button>
+        <button class="masDos">+2</button>
+        <button class="masCinco">+5</button>
+        <button class="masDiez">+10</button>
+        <button id="rein">Reiniciar</button>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="info">
+            <div class="descripcion">
+                <h3>Contador</h3>
+                <p>Contador Online es una herramienta diseñada para ayudarte a llevar un registro de todo lo que necesites contar. Puedes usarlo para contar personas, puntuaciones, goles, objetos, repeticiones o cualquier otra cosa.</p>
+            </div>
+            <div class="menu">
+                <ul class="">
+                    <li><a href="../index.html">Reloj</a></li>
+                    <li><a href="../cronometro/index.html">Cronometro</a></li>
+                    <li><a href="../temporizador/index.html">Temporizador</a></li>
+                    <li><a href="../marcador/index.html">Marcador</a></li>
+                    <li><a href="index.html">Contador</a></li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="logo.svg" alt="">
+            </div>
+        </div>
+        <div class="derechos">
+            <small>© 2023 <b>MI RELOJ ONLINE</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="contador.js"></script>
+    <script src="navbar.js"></script>
+</body>
+</html>
